@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShopDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Guid" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="OriginalTitle" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Isbn" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="NumberOfPages" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Authors" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Publishers" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Translators" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="DatePublished" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BookSize" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Condition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BindingType" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Subject" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Language" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ShopDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Books" EntityType="Self.Book" />
+  </EntityContainer>
+</Schema>
