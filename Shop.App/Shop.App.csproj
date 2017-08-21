@@ -75,6 +75,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Shop.Core\Shop.Core.csproj">
+      <Project>{98abf096-0c43-42b3-8a5e-9c5808f51999}</Project>
+      <Name>Shop.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Shop\Shop.Data.csproj">
       <Project>{4E107141-9A23-472D-9DCE-934B148307F4}</Project>
       <Name>Shop.Data</Name>

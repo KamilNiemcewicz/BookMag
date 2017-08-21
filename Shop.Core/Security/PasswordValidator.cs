@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Shop.Core.Security
 {
-    internal class PasswordValidator
+    public class PasswordValidator
     {
         private enum PasswordScore
         {

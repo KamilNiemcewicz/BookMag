@@ -1,5 +1,5 @@
 ﻿using Shop.Core.UI;
-using Shop.Security.UI;
+using Shop.Core.Security.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;

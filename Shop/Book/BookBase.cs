@@ -24,9 +24,10 @@ namespace Shop.Book
         public BookLanguage Language { get;  set; }
         public bool Active { get; set; }
         public bool test { get; set; }
-        protected BookBase(int bookId, Guid guid, string title, string originalTitle, string isbn, int numberOfPages, IList<Author> authors, IList<Publisher> publishers, IList<Translator> translators, IList<Tag> tags, DateTime? datePublished, BookSubject subject, BookLanguage language, bool active)
+
+        protected BookBase(int? bookId, Guid guid, string title, string originalTitle, string isbn, int numberOfPages, IList<Author> authors, IList<Publisher> publishers, IList<Translator> translators, IList<Tag> tags, DateTime? datePublished, BookSubject subject, BookLanguage language, bool active)
         {
-            BookId = bookId ?? throw new ArgumentNullException(bookId);
+            BookId = bookId ?? throw new ArgumentNullException(bookId.ToString());
             Guid = guid;
             Title = title;
             OriginalTitle = originalTitle;

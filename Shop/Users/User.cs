@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Mail;
+using Shop.Core.Security;
 
 namespace Shop.Users
 {
